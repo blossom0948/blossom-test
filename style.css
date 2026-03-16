@@ -280,12 +280,80 @@ nav ul.nav-links li a:hover {
     color: #999;
 }
 
-/* Contact */
+/* Contact Section Layout */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.contact-form {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.contact-form h3, .contact-info h3 {
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--section-border);
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: inherit;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* To ensure full width including padding */
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.form-note {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Updated Contact Styles */
 .contact-info {
     background: var(--card-bg);
     padding: 2.5rem;
     border-radius: 12px;
-    text-align: center;
+    box-shadow: var(--shadow);
+    text-align: left; /* Re-aligned to left */
 }
 
 #map {
@@ -315,31 +383,8 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    nav ul.nav-links {
-        margin: 1rem 0;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav ul.nav-links li {
-        margin: 0.5rem;
-    }
-
-    #hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .about-grid, .activities-grid {
+@media (max-width: 992px) {
+    .contact-container {
         grid-template-columns: 1fr;
-    }
-
-    .highlight-section {
-        padding: 1.5rem;
     }
 }
