@@ -11,12 +11,16 @@
     <header>
         <nav>
             <div class="logo">부안 낭주중학교</div>
-            <ul>
-                <li><a href="#about">학교 소개</a></li>
-                <li><a href="#admissions">입학 안내</a></li>
+            <ul class="nav-links">
+                <li><a href="#about">학교소개</a></li>
+                <li><a href="#activities">학생활동</a></li>
+                <li><a href="#ai-edu">AI 정보교육</a></li>
+                <li><a href="#notices">공지사항</a></li>
                 <li><a href="#contact">오시는 길</a></li>
-                <li><button class="theme-toggle" id="theme-toggle">다크 모드</button></li>
             </ul>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle">다크 모드</button>
+            </div>
         </nav>
     </header>
 
@@ -24,25 +28,90 @@
         <section id="hero">
             <div class="hero-content">
                 <h1>부안 낭주중학교</h1>
-                <p>미래를 향한 꿈을 키우는 곳</p>
+                <p>미래를 향한 꿈을 키우는 AI 정보교육 중심학교</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn">학교 더 알아보기</a>
+                </div>
             </div>
         </section>
 
         <section id="about">
-            <h2>학교 소개</h2>
-            <p>부안 낭주중학교는 오랜 역사와 전통을 자랑하며, 학생들의 꿈과 미래를 위해 최선을 다하고 있습니다. 우리 학교는...</p>
+            <div class="section-title">
+                <h2>학교 소개</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>인사말</h3>
+                    <p>미래를 여는 행복한 배움터, 부안 낭주중학교에 오신 것을 환영합니다. 우리 학교는 학생들이 스스로 꿈을 설계하고 미래를 준비할 수 있도록 최선을 다하고 있습니다.</p>
+                </div>
+                <div class="about-card">
+                    <h3>학교 상징</h3>
+                    <p><strong>교화:</strong> 매화 (인내와 선비 정신)<br><strong>교목:</strong> 소나무 (절개와 굳은 의지)</p>
+                </div>
+                <div class="about-card">
+                    <h3>교육 목표</h3>
+                    <p>바른 인성과 창의적 사고를 갖춘 인재 양성, 디지털 대전환 시대를 선도하는 AI 역량 강화.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="admissions">
-            <h2>입학 안내</h2>
-            <p>낭주중학교의 입학 절차는 다음과 같습니다...</p>
+        <section id="ai-edu" class="highlight-section">
+            <div class="section-title">
+                <h2>AI 정보교육 중심학교</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content-wrapper">
+                <p>낭주중학교는 AI 정보교육 중심학교로서 미래 사회에 필요한 핵심 역량을 키우는 맞춤형 교육 과정을 운영합니다.</p>
+                <ul class="feature-list">
+                    <li>인공지능(AI) 원리 이해 및 코딩 교육</li>
+                    <li>디지털 소양 강화를 위한 체험형 프로그램</li>
+                    <li>AI 융합 수업을 통한 문제 해결 능력 배양</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="activities">
+            <div class="section-title">
+                <h2>학생활동 및 소식</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-item">
+                    <div class="placeholder-img">학교행사사진</div>
+                    <h4>즐거운 입학식</h4>
+                    <p>새로운 시작을 축하하며 선후배가 하나 되는 시간을 가졌습니다.</p>
+                </div>
+                <div class="activity-item">
+                    <div class="placeholder-img">급식 안내</div>
+                    <h4>오늘의 식단</h4>
+                    <p>균형 잡힌 영양 식단으로 건강한 학교 생활을 지원합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="notices">
+            <div class="section-title">
+                <h2>공지사항</h2>
+                <div class="underline"></div>
+            </div>
+            <ul class="notice-list">
+                <li><span>[공지]</span> 2026학년도 학부모 상담 주간 안내 <small>2026.03.10</small></li>
+                <li><span>[안내]</span> 전북에듀페이 지원 안내 및 신청 방법 <small>2026.03.05</small></li>
+                <li><span>[일정]</span> 3월 학업성취도 평가 시행 안내 <small>2026.03.02</small></li>
+            </ul>
         </section>
 
         <section id="contact">
-            <h2>오시는 길</h2>
-            <p>주소: (우:56318)전북특별자치도 부안군 부안읍 교동 1길 42</p>
-            <p>전화번호: 063-583-8381</p>
-            <div id="map"></div>
+            <div class="section-title">
+                <h2>오시는 길</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-info">
+                <p><strong>주소:</strong> (우:56318) 전북특별자치도 부안군 부안읍 교동 1길 42</p>
+                <p><strong>전화:</strong> 063-583-8381 | <strong>팩스:</strong> 063-581-2943</p>
+                <div id="map">지도 로딩 중...</div>
+            </div>
         </section>
     </main>
 
