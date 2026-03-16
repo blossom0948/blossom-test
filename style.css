@@ -383,15 +383,18 @@ nav ul.nav-links li a:hover {
     text-align: left;
 }
 
-#map {
-    height: 300px;
-    background: var(--map-bg);
+#map-container {
+    height: 350px;
     margin-top: 2rem;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
+    box-shadow: var(--shadow);
     width: 100%;
+}
+
+#map-container iframe {
+    width: 100%;
+    height: 100%;
 }
 
 /* Sections */
