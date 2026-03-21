@@ -481,3 +481,37 @@ footer {
         font-size: 1.8rem;
     }
 }
+
+/* Legal Pages Styling */
+.legal-page main {
+    background: var(--card-bg);
+    margin-top: 100px !important;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 3rem !important;
+}
+
+.legal-page h1 {
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.legal-page h2 {
+    margin-top: 2rem;
+    color: var(--header-bg);
+}
+
+body.dark-mode .legal-page h2 {
+    color: #aaccff;
+}
+
+.legal-page p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.legal-page .btn {
+    margin-top: 2rem;
+}
